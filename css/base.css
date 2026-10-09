@@ -1,0 +1,192 @@
+body {
+  margin-right: 160px;
+  margin-left: 160px;
+  font-family: var(--font-body);
+}
+
+.nav-divider {
+  border: none;
+  height: 2px;
+  color: #333;
+  background-color: #333;
+  margin-left: -160px;
+  margin-right: -160px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: var(--space-1);
+  padding-bottom: var(--space-1);
+  align-items: center;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-evenly;
+  gap: var(--space-4);
+  font-size: var(--text-base);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: var(--ink);
+}
+
+/* Home Page */
+.home,
+.projects-title {
+  margin-top: var(--space-6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-6);
+}
+
+.home-text,
+.project-title-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.home-nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--space-2);
+}
+
+#view-my-projects-btn {
+  padding: var(--space-2);
+  color: var(--white);
+  background-color: var(--accent);
+  border: none;
+  font-size: var(--text-base);
+}
+
+#contact-me-btn {
+  border: 2px solid black;
+  padding: var(--space-2);
+  background-color: white;
+  font-size: var(--text-base);
+}
+
+.home img {
+  height: 400px;
+  width: 300px;
+}
+
+/* About */
+.about {
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-6);
+  display: flex;
+  justify-content: flex-start;
+  gap: 160px;
+}
+
+.about p {
+  line-height: 1.6;
+}
+
+.about-text {
+  width: 50%;
+}
+
+.about-text-education,
+.about-text-based-in,
+.about-text-right-now {
+  display: flex;
+  justify-content: space-between;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  color: var(--line);
+  background-color: var(--line);
+}
+
+/* Skills */
+.skills {
+  margin-top: var(--space-6);
+  display: flex;
+  justify-content: flex-start;
+  gap: 160px;
+  margin-bottom: var(--space-6);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+  width: 100%;
+}
+
+.skills-grid label {
+  font-family: var(--font-mono);
+  color: var(--muted);
+}
+
+/* Tag lists (skills + project tech) */
+.skill-items,
+.project-items {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-top: var(--space-1);
+  max-width: 100%;
+}
+
+.skill-items li,
+.project-items li {
+  border: 1.5px solid #333;
+  padding: 4px;
+  font-family: var(--font-mono);
+  white-space: nowrap;
+}
+
+/* Projects */
+.project {
+  margin-top: var(--space-4);
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--space-6);
+  margin-bottom: var(--space-4);
+}
+
+.project img {
+  width: 400px;
+  height: 400px;
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.project-description h3 {
+  font-size: var(--text-xl);
+}
+
+/* Bullet list inside a project description */
+.project-points {
+  list-style: disc inside;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}

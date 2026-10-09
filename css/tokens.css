@@ -1,0 +1,35 @@
+:root {
+  /* colors */
+  --ink: #111111;
+  --muted: #555555;
+  --line: #d4d4d4;
+  --surface: #f2f2f2;
+  --white: #ffffff;
+  --accent: #1f3fd6;
+
+  /* fonts */
+  --font-body: "Archivo", "Helvetica Neue", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+
+  /* fonts sizes */
+  --text-sm: 14px; /* labels, tags, nav links */
+  --text-md: 16px; /* footer text */
+  --text-base: 18px; /* body text */
+  --text-lg: 20px; /* intro paragraphs, logo */
+  --text-xl: 22px; /* h3, card titles */
+  --text-2xl: 32px; /* h2, section titles */
+  --text-3xl: 40px; /* large headings on small pages */
+  --text-4xl: 56px; /* h1 */
+
+  /* spacing */
+  --space-0: 4px;
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 64px;
+  --space-6: 72px;
+
+  /* layout */
+  --container: 1040px;
+}

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <mask id="cut" maskUnits="userSpaceOnUse" x="0" y="0" width="1024" height="1024">
+      <rect width="1024" height="1024" fill="#fff"/>
+      <line x1="270" y1="583" x2="750" y2="897" stroke="#000" stroke-width="24"/>
+    </mask>
+  </defs>
+  <g fill="#8A1C2E" stroke="none">
+    <!-- oud bowl: thick-to-thin wall, split by one diagonal into two swooshes -->
+    <path mask="url(#cut)" fill-rule="evenodd"
+      d="M 489 400 C 470 520, 312 580, 312 730 C 312 850, 400 930, 512 930 C 624 930, 712 850, 712 730 C 712 580, 554 520, 535 400 Z
+         M 512 505 C 500 572, 392 612, 392 725 C 392 815, 450 868, 520 868 C 612 868, 680 810, 680 725 C 680 612, 524 572, 512 505 Z"/>
+    <!-- neck -->
+    <path d="M 495 188 L 529 188 L 536 404 L 488 404 Z"/>
+    <!-- sound hole dot -->
+    <circle cx="530" cy="716" r="24"/>
+  </g>
+  <g fill="none" stroke="#8A1C2E" stroke-linecap="round" stroke-linejoin="round">
+    <!-- bent-back pegbox and pegs -->
+    <line x1="512" y1="196" x2="434" y2="84" stroke-width="38"/>
+    <g stroke-width="11">
+      <line x1="455" y1="183" x2="521" y2="137"/>
+      <line x1="435" y1="154" x2="501" y2="108"/>
+      <line x1="415" y1="125" x2="481" y2="79"/>
+    </g>
+    <!-- sound hole ring -->
+    <circle cx="530" cy="716" r="56" stroke-width="12"/>
+    <!-- price tag on a cord -->
+    <path d="M 530 222 C 598 226, 642 268, 642 334" stroke-width="10"/>
+    <path d="M 642 334 L 676 368 V 440 a 10 10 0 0 1 -10 10 H 618 a 10 10 0 0 1 -10 -10 V 368 Z" stroke-width="10"/>
+  </g>
+  <circle cx="642" cy="380" r="9" fill="#8A1C2E"/>
+</svg>

@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components.css" />
+  </head>
+
+  <!-- Navigation Bar -->
+  <header>
+    <div class="nav-bar">
+      <a
+        href="#"
+        style="
+          font-size: var(--text-xl);
+          color: var(--ink);
+          text-decoration: none;
+        "
+        ><strong>Fares Ibrahim</strong></a
+      >
+      <nav>
+        <ul class="nav-items">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">PROJECTS</a></li>
+          <li><a href="#">EXPERIENCE</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+    <hr class="nav-divider" />
+  </header>
+
+  <!-- Home Page -->
+  <body>
+    <div class="home">
+      <div class="home-text">
+        <label style="color: var(--accent); font-family: var(--font-mono)"
+          >FULL-STACK DEVELOPER</label
+        >
+        <h1 style="font-size: var(--text-4xl); font-weight: 700">
+          Hi, I'm Fares. I build web and mobile apps.
+        </h1>
+        <p style="color: var(--muted); font-size: var(--text-base)">
+          Full-stack developer working with ASP.NET Core, C#, SQL Server, and
+          Flutter. I take features from the database to the screen.
+        </p>
+        <div class="home-nav">
+          <button id="view-my-projects-btn">
+            <strong>View my projects</strong>
+          </button>
+          <button id="contact-me-btn"><strong>Contact me</strong></button>
+        </div>
+      </div>
+      <img
+        src="C:\Users\Lenovo\OneDrive\Desktop\Axsos\personal-portfolio\assets\profile-photo.png"
+      />
+    </div>
+    <hr />
+    <!-- About  -->
+    <div class="about">
+      <h1>About</h1>
+      <div class="about-text">
+        <p>
+          I'm a full-stack developer with a B.S. in Computer Science from the
+          University of Michigan-Flint. I build web and mobile apps with ASP.NET
+          Core, C#, SQL Server, and Flutter.
+        </p>
+        <p>
+          My recent work includes a multi-tenant REST API and a cross-platform
+          patient app, both on a clean, JWT-secured architecture. I'm
+          comfortable owning a feature end to end, from the EF Core data model
+          to the mobile client.
+        </p>
+        <br />
+        <hr />
+        <div class="about-text-education">
+          <label style="color: var(--muted)">EDUCATION</label>
+          <p>B.S. in Computer Science, University of Michigan-Flint, 2024</p>
+        </div>
+        <hr />
+        <div class="about-text-based-in">
+          <label style="color: var(--muted)">BASED IN</label>
+          <p>Bethlehem, Palestine</p>
+        </div>
+        <hr />
+        <div class="about-text-right-now">
+          <label style="color: var(--muted)">RIGHT NOW</label>
+          <p>Full Stack Developer bootcamp at AXSOS Academy</p>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <hr />
+
+    <!-- Skills -->
+    <div class="skills">
+      <h1>Skills</h1>
+      <div class="skills-grid">
+        <div>
+          <label>LANGUAGES</label>
+
+          <ul class="skill-items">
+            <li>C#</li>
+            <li>Dart</li>
+            <li>SQL</li>
+            <li>C++</li>
+            <li>C</li>
+          </ul>
+        </div>
+        <div>
+          <label>BACKEND</label>
+          <ul class="skill-items">
+            <li>ASP.NET Core Web API</li>
+            <li>ASP.NET Core MVC</li>
+            <li>Entity Framework Core</li>
+            <li>REST APIs</li>
+            <li>JWT Authentication</li>
+          </ul>
+        </div>
+        <div>
+          <label>MOBILE & FRONTEND</label>
+          <ul class="skill-items">
+            <li>Flutter</li>
+            <li>Riverpod</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Razor</li>
+          </ul>
+        </div>
+        <div>
+          <label>TOOLS</label>
+          <ul class="skill-items">
+            <li>Git</li>
+            <li>Docker</li>
+            <li>Linux</li>
+            <li>SQL Server</li>
+            <li>Figma</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <!-- Projects -->
+    <div class="projects-title">
+      <div class="project-title-text">
+        <label style="color: var(--accent); font-family: var(--font-mono)"
+          >PROJECTS</label
+        >
+        <h1 style="font-size: var(--text-4xl); font-weight: 700">
+          Things I've built.
+        </h1>
+        <p style="color: var(--muted); font-size: var(--text-base)">
+          Full-stack web and mobile projects I designed and built myself. Each
+          one links to its source code.
+        </p>
+      </div>
+    </div>
+    <hr />
+    <div class="project">
+      <img
+        src="C:\Users\Lenovo\OneDrive\Desktop\Axsos\personal-portfolio\assets\physiolink-logo.png"
+      />
+      <div class="project-description">
+        <label style="font-family: var(--font-mono); color: var(--muted)"
+          >2025–2026 · Physiotherapy management platform</label
+        >
+        <h3 style="margin: 0"><strong>PhysioLink</strong></h3>
+        <p>
+          A platform that connects physiotherapy clinics with their patients: a
+          Flutter patient app, a multi-tenant ASP.NET Core REST API, and an MVC
+          admin panel for clinic staff.
+        </p>
+        <ul class="project-points">
+          <li>
+            Patient app with secure JWT login, assigned-exercise tracking, video
+            exercise guides, and feedback submission.
+          </li>
+          <li>
+            REST API on Clean Architecture with role-based authorization and
+            per-clinic data isolation, deployed with Docker.
+          </li>
+          <li>
+            Admin panel for therapist profiles, patient enrollment, exercise
+            assignment, and appointment scheduling.
+          </li>
+        </ul>
+        <ul class="project-items">
+          <li>Flutter</li>
+          <li>Riverpod</li>
+          <li>ASP.NET Core Web API</li>
+          <li>EF Core</li>
+          <li>SQL Server</li>
+          <li>Docker</li>
+        </ul>
+        <a href="#">View code on GitHub</a>
+      </div>
+    </div>
+    <hr />
+    <div class="project">
+      <img
+        src="C:\Users\Lenovo\OneDrive\Desktop\Axsos\personal-portfolio\assets\maqam-logo.svg"
+      />
+      <div class="project-description">
+        <label style="font-family: var(--font-mono); color: var(--muted)"
+          >2026 · E-commerce web application</label
+        >
+        <h3 style="margin: 0"><strong>Maqam</strong></h3>
+        <p>
+          A full-stack online store built with ASP.NET Core MVC, with a product
+          catalog, category filtering, and inventory management.
+        </p>
+        <ul class="project-points">
+          <li>
+            Shopping cart and checkout that handle cart state, order creation,
+            and transactions through Entity Framework Core.
+          </li>
+          <li>
+            Repository pattern and dependency injection across products, orders,
+            cart, and stock.
+          </li>
+          <li>
+            ASP.NET Identity for secure accounts, order history, and role-based
+            admin access.
+          </li>
+        </ul>
+        <ul class="project-items">
+          <li>ASP.NET Core MVC</li>
+          <li>C#</li>
+          <li>EF Core</li>
+          <li>SQL Server</li>
+          <li>ASP.NET Identity</li>
+        </ul>
+        <a href="#">View code on GitHub</a>
+      </div>
+    </div>
+    <hr />
+  </body>
+</html>
