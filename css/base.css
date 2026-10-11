@@ -1,16 +1,13 @@
 body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background-color: var(--bg);
+}
+.page {
   margin-right: 160px;
   margin-left: 160px;
-  font-family: var(--font-body);
-}
-
-.nav-divider {
-  border: none;
-  height: 2px;
-  color: #333;
-  background-color: #333;
-  margin-left: -160px;
-  margin-right: -160px;
 }
 
 h1 {
@@ -23,6 +20,10 @@ h1 {
   padding-top: var(--space-1);
   padding-bottom: var(--space-1);
   align-items: center;
+  padding-right: 160px;
+  padding-left: 160px;
+  background-color: var(--surface);
+  border-bottom: 1px solid var(--line);
 }
 
 .nav-items {
@@ -42,7 +43,9 @@ h1 {
 
 /* Home Page */
 .home,
-.projects-title {
+.projects-title,
+.experience-title,
+.contact-title {
   margin-top: var(--space-6);
   display: flex;
   justify-content: space-between;
@@ -51,7 +54,9 @@ h1 {
 }
 
 .home-text,
-.project-title-text {
+.project-title-text,
+.experience-title-text,
+.contact-title-text {
   display: flex;
   flex-direction: column;
   gap: var(--space-2);
@@ -63,7 +68,8 @@ h1 {
   gap: var(--space-2);
 }
 
-#view-my-projects-btn {
+#view-my-projects-btn,
+#send-message-btn {
   padding: var(--space-2);
   color: var(--white);
   background-color: var(--accent);
@@ -71,11 +77,13 @@ h1 {
   font-size: var(--text-base);
 }
 
-#contact-me-btn {
+#contact-me-btn,
+#download-resume-btn {
   border: 2px solid black;
   padding: var(--space-2);
   background-color: white;
   font-size: var(--text-base);
+  width: fit-content;
 }
 
 .home img {
@@ -84,7 +92,8 @@ h1 {
 }
 
 /* About */
-.about {
+.about,
+.experience {
   margin-top: var(--space-6);
   margin-bottom: var(--space-6);
   display: flex;
@@ -96,7 +105,8 @@ h1 {
   line-height: 1.6;
 }
 
-.about-text {
+.about-text,
+.experience-text {
   width: 50%;
 }
 
@@ -112,6 +122,8 @@ hr {
   height: 1px;
   color: var(--line);
   background-color: var(--line);
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /* Skills */
@@ -171,7 +183,8 @@ hr {
   height: 400px;
 }
 
-.project-description {
+.project-description,
+.experience-description {
   display: flex;
   flex-direction: column;
   gap: var(--space-4);
@@ -189,4 +202,138 @@ hr {
   display: flex;
   flex-direction: column;
   gap: var(--space-2);
+}
+
+/* More Work */
+.more-work-section {
+  margin-top: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.more-work-projects {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.more-work-project-card {
+  border: 1px solid black;
+  padding: var(--space-2);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-0);
+}
+
+.more-work-project-card h3 {
+  font-size: var(--text-xl);
+}
+
+.more-work-project-card p {
+  line-height: 1.8;
+}
+
+/* Education and Training */
+.education,
+.training {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+
+.education-description,
+.training-description {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+#organization {
+  padding: 0;
+  margin: 0;
+  color: var(--muted);
+}
+
+/* Contact */
+.contact {
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-6);
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--space-6);
+}
+
+.contact-details,
+.contact-form {
+  width: 50%;
+}
+
+.contact-details h1,
+.contact-form h1 {
+  margin-bottom: var(--space-2);
+}
+
+.contact-detail {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding-top: var(--space-1);
+  padding-bottom: var(--space-1);
+}
+
+.contact-detail a {
+  color: var(--ink);
+}
+
+.contact-detail p {
+  margin: 0;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.contact-form label {
+  font-family: var(--font-mono);
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: 1.5px solid #333;
+  padding: var(--space-1);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  margin-bottom: var(--space-2);
+}
+
+.contact-form textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+#send-message-btn {
+  width: fit-content;
+}
+
+#view-my-projects-btn,
+#contact-me-btn,
+#download-resume-btn,
+#send-message-btn {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#contact-me-btn,
+#download-resume-btn {
+  color: var(--ink);
+}
+
+html {
+  scroll-behavior: smooth;
 }

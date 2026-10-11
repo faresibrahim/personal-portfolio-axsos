@@ -8,33 +8,33 @@
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/components.css" />
   </head>
+  <main>
+    <!-- Navigation Bar -->
+    <header>
+      <div class="nav-bar">
+        <a
+          href="#"
+          style="
+            font-size: var(--text-xl);
+            color: var(--ink);
+            text-decoration: none;
+          "
+          ><strong>Fares Ibrahim</strong></a
+        >
+        <nav>
+          <ul class="nav-items">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+    </header>
 
-  <!-- Navigation Bar -->
-  <header>
-    <div class="nav-bar">
-      <a
-        href="#"
-        style="
-          font-size: var(--text-xl);
-          color: var(--ink);
-          text-decoration: none;
-        "
-        ><strong>Fares Ibrahim</strong></a
-      >
-      <nav>
-        <ul class="nav-items">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">PROJECTS</a></li>
-          <li><a href="#">EXPERIENCE</a></li>
-          <li><a href="#">CONTACT</a></li>
-        </ul>
-      </nav>
-    </div>
-    <hr class="nav-divider" />
-  </header>
-
-  <!-- Home Page -->
-  <body>
+    <!-- Home Page -->
+    <main class="page">
     <div class="home">
       <div class="home-text">
         <label style="color: var(--accent); font-family: var(--font-mono)"
@@ -48,15 +48,13 @@
           Flutter. I take features from the database to the screen.
         </p>
         <div class="home-nav">
-          <button id="view-my-projects-btn">
-            <strong>View my projects</strong>
-          </button>
-          <button id="contact-me-btn"><strong>Contact me</strong></button>
+          <a id="view-my-projects-btn" href="#projects"
+            ><strong>View my projects</strong></a
+          >
+          <a id="contact-me-btn" href="#contact"><strong>Contact me</strong></a>
         </div>
       </div>
-      <img
-        src="C:\Users\Lenovo\OneDrive\Desktop\Axsos\personal-portfolio\assets\profile-photo.png"
-      />
+      <img src="assets/profile-photo.png" />
     </div>
     <hr />
     <!-- About  -->
@@ -145,7 +143,7 @@
     <hr />
 
     <!-- Projects -->
-    <div class="projects-title">
+    <div class="projects-title" id="projects">
       <div class="project-title-text">
         <label style="color: var(--accent); font-family: var(--font-mono)"
           >PROJECTS</label
@@ -161,9 +159,7 @@
     </div>
     <hr />
     <div class="project">
-      <img
-        src="C:\Users\Lenovo\OneDrive\Desktop\Axsos\personal-portfolio\assets\physiolink-logo.png"
-      />
+      <img src="assets/physiolink-logo.png" />
       <div class="project-description">
         <label style="font-family: var(--font-mono); color: var(--muted)"
           >2025–2026 · Physiotherapy management platform</label
@@ -196,14 +192,14 @@
           <li>SQL Server</li>
           <li>Docker</li>
         </ul>
-        <a href="#">View code on GitHub</a>
+        <a href="https://github.com/faresibrahim/physiolink"
+          >View code on GitHub</a
+        >
       </div>
     </div>
     <hr />
     <div class="project">
-      <img
-        src="C:\Users\Lenovo\OneDrive\Desktop\Axsos\personal-portfolio\assets\maqam-logo.svg"
-      />
+      <img src="assets/maqam-logo.svg" />
       <div class="project-description">
         <label style="font-family: var(--font-mono); color: var(--muted)"
           >2026 · E-commerce web application</label
@@ -234,9 +230,236 @@
           <li>SQL Server</li>
           <li>ASP.NET Identity</li>
         </ul>
-        <a href="#">View code on GitHub</a>
+        <a href="https://github.com/faresibrahim/maqam-ecommerce-website"
+          >View code on GitHub</a
+        >
       </div>
     </div>
     <hr />
+    <div class="more-work-section">
+      <h1>More Work</h1>
+      <div class="more-work-projects">
+        <div class="more-work-project-card">
+          <label style="font-family: var(--font-mono); color: var(--muted)"
+            >2024 · Capstone project</label
+          >
+          <h3>Finder Pal Warehouse Robot</h3>
+          <p>
+            I contributed to FinderPal’s robot development, supporting hardware
+            integration and software implementation for navigation and computer
+            vision. I also led weekly team standups, tracked project milestones,
+            maintained technical documentation, and designed and developed the
+            team’s project website from scratch using HTML, CSS, and JavaScript.
+          </p>
+          <a href="#">[PROJECT LINK]]</a>
+        </div>
+
+        <div class="more-work-project-card">
+          <label style="font-family: var(--font-mono); color: var(--muted)"
+            >2025 · Capstone project</label
+          >
+          <h3>Aman</h3>
+          <p>
+            I led the UX/UI design process for Aman, a trauma-informed mobile
+            application for women affected by abuse and trauma. I conducted user
+            research, developed personas and empathy maps, analyzed competing
+            apps, mapped user flows, and designed high-fidelity screens and an
+            interactive Figma prototype focused on privacy, accessibility, and
+            emotional safety.
+          </p>
+          <a href="https://www.behance.net/gallery/236078101/Aman-Mobile-App"
+            >[PROJECT LINK]]</a
+          >
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <!-- Experience -->
+    <div class="experience-title" id="experience">
+      <div class="experience-title-text">
+        <label style="color: var(--accent); font-family: var(--font-mono)"
+          >EXPERIENCE
+        </label>
+        <h1 style="font-size: var(--text-4xl); font-weight: 700">
+          Where I've worked and studied.
+        </h1>
+        <p style="color: var(--muted); font-size: var(--text-base)">
+          My work history, education, and training in one place. The full résumé
+          is available as a PDF.
+        </p>
+        <a
+          id="download-resume-btn"
+          href="assets/FaresIbrahimResume2026.pdf"
+          download
+          ><strong>Download résumé (PDF)</strong></a
+        >
+      </div>
+    </div>
+    <hr />
+    <div class="experience">
+      <h1>Work</h1>
+      <div class="experience-description">
+        <label style="font-family: var(--font-mono); color: var(--muted)"
+          >Apr 2025 – Oct 2026</label
+        >
+        <h3 style="margin: 0">
+          <strong>Digital Systems Developer - CDG Company</strong>
+        </h3>
+
+        <ul class="project-points">
+          <li>
+            Built internal business apps in AppSheet, backed by structured
+            Google Sheets with defined data relationships.
+          </li>
+          <li>
+            Integrated the Google Drive API to centralize document management
+            and automate file organization.
+          </li>
+          <li>
+            Maintained the company's WordPress site on DigitalOcean and provided
+            software and hardware support, debugging production systems and
+            coordinating fixes with stakeholders.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <div class="experience">
+      <h1 style="visibility: hidden">Work</h1>
+      <div class="experience-description">
+        <label style="font-family: var(--font-mono); color: var(--muted)"
+          >Nov 2023 – Apr 2024</label
+        >
+        <h3 style="margin: 0">
+          <strong>Research Assistant - University of Michigan</strong>
+        </h3>
+
+        <ul class="project-points">
+          <li>
+            Developed and maintained an open-source Chrome extension, delivering
+            feature enhancements and bug fixes in JavaScript.
+          </li>
+          <li>
+            Collaborated with team members on feature planning, usability
+            improvements, and technical decisions.
+          </li>
+          <li>
+            Helped test, debug, and validate application behavior across
+            different environments.
+          </li>
+        </ul>
+      </div>
+      <hr />
+    </div>
+    <hr />
+    <div class="education">
+      <h1>Education</h1>
+      <div class="education-description">
+        <h3 style="margin: 0">
+          <strong>B.S. in Computer Science</strong>
+        </h3>
+        <label id="organization"
+          >University of Michigan - Flint | Graduated April 2024</label
+        >
+      </div>
+    </div>
+    <hr />
+    <div class="training">
+      <h1>Training</h1>
+      <div class="training-description">
+        <h3 style="margin: 0">
+          <strong>Full Stack Developer Bootcamp</strong>
+        </h3>
+        <label id="organization">Axsos Academy - In Progress</label>
+      </div>
+      <hr />
+      <div class="training-description">
+        <h3 style="margin: 0">
+          <strong>Full Stack Developer Bootcamp</strong>
+        </h3>
+        <label id="organization">Axsos Academy - In Progress</label>
+      </div>
+      <hr />
+      <div class="training-description">
+        <h3 style="margin: 0">
+          <strong>Full Stack Developer Bootcamp</strong>
+        </h3>
+        <label id="organization">Axsos Academy - In Progress</label>
+      </div>
+      <hr />
+    </div>
+
+    <hr />
+
+    <!-- Contact -->
+    <div class="contact-title" id="contact">
+      <div class="contact-title-text">
+        <label style="color: var(--accent); font-family: var(--font-mono)"
+          >CONTACT</label
+        >
+        <h1 style="font-size: var(--text-4xl); font-weight: 700">
+          Let's talk.
+        </h1>
+        <p style="color: var(--muted); font-size: var(--text-base)">
+          Have a role, a project, or a question? Email is the fastest way to
+          reach me, or send a message with the form.
+        </p>
+      </div>
+    </div>
+    <hr />
+    <div class="contact">
+      <div class="contact-details">
+        <h1>Contact details</h1>
+        <hr />
+        <div class="contact-detail">
+          <label style="font-family: var(--font-mono); color: var(--muted)"
+            >EMAIL</label
+          >
+          <a href="mailto:Fares.a.ibrahim@gmail.com"
+            >Fares.a.ibrahim@gmail.com</a
+          >
+        </div>
+        <hr />
+        <div class="contact-detail">
+          <label style="font-family: var(--font-mono); color: var(--muted)"
+            >LINKEDIN</label
+          >
+          <a href="https://linkedin.com/in/fares-ibrahim-012715201"
+            >linkedin.com/in/fares-ibrahim-012715201</a
+          >
+        </div>
+        <hr />
+        <div class="contact-detail">
+          <label style="font-family: var(--font-mono); color: var(--muted)"
+            >GITHUB</label
+          >
+          <a href="https://github.com/faresibrahim">github.com/faresibrahim</a>
+        </div>
+        <hr />
+        <div class="contact-detail">
+          <label style="font-family: var(--font-mono); color: var(--muted)"
+            >LOCATION</label
+          >
+          <p>Bethlehem, Palestine</p>
+        </div>
+        <hr />
+      </div>
+      <div class="contact-form">
+        <h1>Send a message</h1>
+        <form>
+          <label for="name">NAME</label>
+          <input type="text" id="name" name="name" />
+          <label for="email">EMAIL</label>
+          <input type="email" id="email" name="email" />
+          <label for="message">MESSAGE</label>
+          <textarea id="message" name="message"></textarea>
+          <button id="send-message-btn" type="submit">
+            <strong>Send message</strong>
+          </button>
+        </form>
+      </div>
+    </div>
+    </main>
   </body>
 </html>

@@ -1,5 +1,7 @@
 :root {
   /* colors */
+  --bg: #f6f5f2; /* page background, warm off-white */
+  --surface: #ffffff; /* nav bar and cards */
   --ink: #111111;
   --muted: #555555;
   --line: #d4d4d4;
