@@ -22,7 +22,7 @@ h1 {
   align-items: center;
   padding-right: 160px;
   padding-left: 160px;
-  background-color: var(--surface);
+  background-color: var(--accent);
   border-bottom: 1px solid var(--line);
 }
 
@@ -36,9 +36,14 @@ h1 {
   margin: 0;
 }
 
+#title-fares {
+  font-size: var(--text-xl);
+  color: var(--white);
+  text-decoration: none;
+}
 .nav-items a {
   text-decoration: none;
-  color: var(--ink);
+  color: var(--white);
 }
 
 /* Home Page */
